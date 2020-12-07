@@ -1,2 +1,3 @@
 def read_file(filename:str):
-    return [line.rstrip() for line in open(filename)]
+    with open(filename) as f:
+        return [line.rstrip() for line in f]
